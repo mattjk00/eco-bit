@@ -3,6 +3,8 @@
 <!-- The Header -->
 <div id="header" class="mainbox">
 	<h1>EcoBit</h1>
+	<h3><%= session[:user_id] %></h3>
+	<%= button_to 'Sign In!', 'signin/index', method: :get %>
 </div>
 
 
