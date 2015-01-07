@@ -1,0 +1,31 @@
+<title>Eco-Bit</title>
+
+<!-- The Header -->
+<div id="header" class="mainbox">
+	<h1>EcoBit</h1>
+</div>
+
+
+<!-- About box -->
+<div id="aboutbox" class="mainbox">
+	<h1 class="boxheader_type2">What is EcoBit?</h1>
+	<ul class="floatright_ul">
+		<li>EcoBit is a <strong>sample text</strong> game about sample text</li>
+		<li>SAMPLE TExt, YOUR sampel TExt</li>
+	</ul>
+</div>
+
+<!-- How to play box -->
+<div id="howtobox" class="mainbox">
+	<h1 class="boxheader">How to EcoBit?</h1>
+	<ul>
+		<li>EcoBit is a <strong>sample text</strong> game about sample text</li>
+		<li>SAMPLE TExt, YOUR sampel TExt</li>
+	</ul>
+</div>
+
+<!-- Sign up option box -->
+<div id="signupbox" class="mainbox">
+	<h3>Get Started!</h3>
+	<%= button_to 'Sign Up Now!', new_company_path %>
+</div>
