@@ -11,11 +11,7 @@ class SigninController < ApplicationController
   def create
     @company = Company.new(company_params)
     @foundcomp = Company.find_by_email(@company.email)
-    
-    puts "\n\n\n\n\n\n\n"
-    puts @foundcomp.password_digest
-    puts "\n\n\n\n\n\n\n"
-    
+
     if @foundcomp != nil # if found a company
       if @foundcomp.authenticate(@company.password) #check password
         session[:user_id] = @foundcomp.name
@@ -29,7 +25,7 @@ class SigninController < ApplicationController
       flash[:signin_error] = "Invalid email"
     end
     
-    puts "TRIED: #{@company.email}"
+    redirect_to root_path
   end
   
   
