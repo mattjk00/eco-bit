@@ -6,6 +6,6 @@ class Company < ActiveRecord::Base
   has_secure_password
   
   def updateStats
-    self.update(name: "[deleted]")
+    
   end
 end
