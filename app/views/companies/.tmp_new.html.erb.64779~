@@ -1,4 +1,3 @@
-<%= render 'header' %>
 <title>Create a new company</title>
 
 <div id="companyform">
