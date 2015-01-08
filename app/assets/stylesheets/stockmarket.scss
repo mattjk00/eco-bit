@@ -1,0 +1,15 @@
+// Place all the styles related to the stockmarket controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+*
+{
+	font-family:tahoma;
+}
+
+#sm_stats *
+{
+	display:inline-block;
+	border-right:1px solid black;
+}
+#sm_stats #first { border-left:1px solid black } 
