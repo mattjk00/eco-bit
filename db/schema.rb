@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150106223637) do
+ActiveRecord::Schema.define(version: 20150108011503) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20150106223637) do
     t.string   "email"
     t.string   "password"
     t.string   "password_confirmation"
+    t.string   "password_digest"
   end
 
 end

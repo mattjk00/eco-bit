@@ -9,16 +9,21 @@
 	height:15%;
 }
 
+*
+{
+	padding:10px;
+}
+
 #aboutbox
 {
-	margin-top:10%;
+	//margin-top:10%;
 	height:30%;
 	background-color:#ecf0f1;
 }
 
 #howtobox
 {
-	margin-top:18%;
+	//margin-top:18%;
 	height:45%;
 	background-color:#34495e;
 	color:#ecf0f1;
@@ -26,7 +31,7 @@
 
 #signupbox
 {
-	margin-top:40%;
+	//margin-top:40%;
 	height:100%;
 	background-color:#e74c3c;
 }
@@ -47,8 +52,8 @@ ul, .floatright_ul
 	text-align:center;
 	background-color:#3498db;
 	font-family:tahoma, sans;
-	position:fixed;
-	top:0;left:0;
+	//position:fixed;
+	//top:0;left:0;
 	width:100%;
 }
 

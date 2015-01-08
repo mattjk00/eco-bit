@@ -12,8 +12,12 @@ class SigninController < ApplicationController
     @company = Company.new(company_params)
     @foundcomp = Company.find_by_email(@company.email)
     
+    puts "\n\n\n\n\n\n\n"
+    puts @foundcomp.password_digest
+    puts "\n\n\n\n\n\n\n"
+    
     if @foundcomp != nil # if found a company
-      if @company.password == @foundcomp.password #check password
+      if @foundcomp.authenticate(@company.password) #check password
         session[:user_id] = @foundcomp.name
         redirect_to root_path #send to home
       else
