@@ -24,8 +24,6 @@ class SigninController < ApplicationController
       render 'new'
       flash[:signin_error] = "Invalid email"
     end
-    
-    redirect_to root_path
   end
   
   
