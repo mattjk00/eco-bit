@@ -15,6 +15,11 @@ class SigninController < ApplicationController
     if @foundcomp != nil # if found a company
       if @foundcomp.authenticate(@company.password) #check password
         session[:user_id] = @foundcomp.name
+        
+        if @foundcomp.name == "admin" #if the admin is logged in
+          session[:admin_auth] = true
+        end
+        
         redirect_to root_path #send to home
       else
         render 'new' #redirect

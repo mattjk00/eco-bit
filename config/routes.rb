@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'admin/index'
+
   get 'stockmarket/index'
 
   get 'signin/index'
