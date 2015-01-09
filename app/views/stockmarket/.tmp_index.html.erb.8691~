@@ -1,0 +1,8 @@
+<div id="header">
+	<h1>Stock Market</h1>
+	
+	<div id="sm_stats">
+		<p id="first">Sample Company: + 15%</p>
+		<p>Sample Company - 2.4%</p>
+	</div>
+</div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150108011503) do
+ActiveRecord::Schema.define(version: 20150108235832) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150108011503) do
     t.string   "password"
     t.string   "password_confirmation"
     t.string   "password_digest"
+    t.float    "stock_price"
   end
 
 end

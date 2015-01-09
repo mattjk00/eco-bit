@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'stockmarket/index'
+
   get 'signin/index'
   get 'signin/create'
   get 'signin/new'
