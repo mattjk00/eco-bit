@@ -1,0 +1,71 @@
+// dark blue - #2c3e50
+// slightly lighter dark blue - #34495e
+// light blue - #3498db
+// light grey - #ecf0f1
+
+#header
+{
+	border-bottom:1px solid #2c3e50;
+	height:15%;
+}
+
+*
+{
+	padding:10px;
+}
+
+#aboutbox
+{
+	//margin-top:10%;
+	height:30%;
+	background-color:#ecf0f1;
+}
+
+#howtobox
+{
+	//margin-top:18%;
+	height:45%;
+	background-color:#34495e;
+	color:#ecf0f1;
+}
+
+#signupbox
+{
+	//margin-top:40%;
+	height:100%;
+	background-color:#e74c3c;
+}
+
+ul, .floatright_ul
+{
+	width:25%;
+}
+
+.floatright_ul
+{
+	float:right;
+	clear:both;
+}
+
+.mainbox
+{
+	text-align:center;
+	background-color:#3498db;
+	font-family:tahoma, sans;
+	//position:fixed;
+	//top:0;left:0;
+	width:100%;
+}
+
+.boxheader, .boxheader_type2
+{
+	border-bottom:1px solid #2c3e50;
+	width:25%;
+	padding:2px;
+	font-family:tahoma, sans;
+}
+
+.boxheader_type2
+{
+	float:right;
+}

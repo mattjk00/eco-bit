@@ -1,0 +1,15 @@
+<div id="header">Admin Panel</div>
+<% session[:admin_auth] = true %>
+
+<table>
+	
+	<% @companies.each do |company| %>
+		<tr>
+			<td class="dangerbutton"><%= link_to 'Delete', company_path(company), method: :delete, data: { confirm:"Are your sure?\nThis action is not reversable."} %></td>
+			<td id="td1"><%= company.name %></td>
+			<td id="td2"><%= company.email %></td>
+			<td id="td3"><%= company.stock_price %></td>
+			<td id="td4"><%= company.password_digest %></td>
+		</tr>
+	<% end %>
+</table>
