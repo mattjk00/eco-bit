@@ -1,34 +1,30 @@
-<title>Eco-Bit</title>
 
-<!-- The Header -->
-<div id="header" class="mainbox">
-	<h1>EcoBit</h1>
-	<h3><%= session[:user_id] %></h3>
-	<%= button_to 'Sign In!', 'signin/index', method: :get %>
-	<%= button_to 'Stock Market', 'stockmarket/index', method: :get %>
-</div>
+<div id="homeScreen">
+	
+	
+	
+	<!-- The background -->
+	<div id="left_side_back"></div>
+	<div id="right_side_back"></div>
 
-
-<!-- About box -->
-<div id="aboutbox" class="mainbox">
-	<h1 class="boxheader_type2">What is EcoBit?</h1>
-	<ul class="floatright_ul">
-		<li>EcoBit is a <strong>sample text</strong> game about sample text</li>
-		<li>SAMPLE TExt, YOUR sampel TExt</li>
-	</ul>
-</div>
-
-<!-- How to play box -->
-<div id="howtobox" class="mainbox">
-	<h1 class="boxheader">How to EcoBit?</h1>
-	<ul>
-		<li>EcoBit is a <strong>sample text</strong> game about sample text</li>
-		<li>SAMPLE TExt, YOUR sampel TExt</li>
-	</ul>
-</div>
-
-<!-- Sign up option box -->
-<div id="signupbox" class="mainbox">
-	<h3>Get Started!</h3>
-	<%= button_to 'Sign Up Now!', new_company_path %>
+	<div id="logo"></div>
+	<h1 id="faded_header">Eco-Bit</div>
+	
+	<div id="left_side_options">
+		<ul>
+			<a href="">
+				<li id="selected">Play!</li>
+			</a>				
+			<li>Intro</li>
+			<li>The Basics</li>
+			<li>News</li>
+			<li>Tutorials</li>
+		</ul>
+	</div>
+	<div id="info">
+		<p id="info_header">Welcome to the world of Eco-Bit</p>
+		<p class="white_back_p">Eco-Bit is a game dedicated to aspiring </p>
+		<p class="white_back_p">entrepeneurs who wish to simulate a realistic business </p>
+		<p class="white_back_p">and rise to the top with other people online.</p>
+	</div>
 </div>

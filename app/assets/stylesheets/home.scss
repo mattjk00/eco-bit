@@ -1,3 +1,82 @@
+#left_side_back, #right_side_back { position:fixed; top:0; left:0; height:100%; z-index:-99; }
+#homeScreen * { font-family:helvetica, tahoma; }
+::-webkit-scrollbar { 
+    display: none; 
+}
+#left_side_back 
+{ 
+	background-color:#eccc15;
+	width:40%;
+}
+#right_side_back
+{
+	background-color:#232628;
+	width:60%;
+	margin-left:40%;
+}
+#faded_header
+{
+	color:white;
+	opacity:0.7;
+	font-size:130px;
+	margin-left:15%;
+	margin-top:-0;
+	display:inline-block;
+}
+#logo
+{
+	background:url('ecobit_logo.png');
+	height:150px;
+	width:150px;
+	display:inline-block;
+	position:fixed;
+	left:25px;
+}
+
+#left_side_options { margin-top:-2%;}
+#left_side_options * { font-family:helvetica; font-size:24px; margin-left:7.3%; width:25% }
+#left_side_options li { border-bottom:1px solid black; width:25%; }
+#left_side_options ul { width:100%; list-style-type: none; }
+a { text-decoration:none; }
+#left_side_options #selected { color:white; border-bottom-color:white; }
+
+#info { 
+	margin-left:39.8%; margin-top:-17.5%; font-family:helvetica;;
+	color:white;
+
+	width:50%;
+	padding-left:10px;
+}
+
+#info_header {  font-size:24px; 	border-bottom:1px solid white;}
+.white_back_p {
+	margin-top:-25px;
+	display:inline-block;
+}
+.white_back_p { color:black; background-color:white; font-size:22px;}
+
+#right_side_info { margin-top:-2%; display:inline-block; }
+#right_side_info * { font-family:helvetica; font-size:24px; margin-left:50%; width:25% }
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
 // dark blue - #2c3e50
 // slightly lighter dark blue - #34495e
 // light blue - #3498db
