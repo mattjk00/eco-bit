@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'companies/index'
   post 'companies/new'
+  get '/companies/buy/:id', to: 'companies#buy'
   root 'home#index'
 end

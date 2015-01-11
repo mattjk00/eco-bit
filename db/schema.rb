@@ -11,20 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150108235832) do
+ActiveRecord::Schema.define(version: 20150111195035) do
 
-  create_table "companies", force: :cascade do |t|
-    t.string   "name"
-    t.string   "description"
-    t.float    "money"
-    t.integer  "employees"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-    t.string   "email"
-    t.string   "password"
-    t.string   "password_confirmation"
-    t.string   "password_digest"
-    t.float    "stock_price"
-  end
+# Could not dump table "companies" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
 end

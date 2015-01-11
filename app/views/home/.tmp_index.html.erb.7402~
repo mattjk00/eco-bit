@@ -1,4 +1,4 @@
-<%= "Signed in as #{session[:user_id]}" %>
+
 <div id="homeScreen">
 	
 	

@@ -2,6 +2,4 @@
 <div id="companyheader">
 	<h1><%= @company.name %></h1>
 	<p><%= "Stock Price: $#{@company.stock_price}" %></p>
-	<%= button_to "Buy Stock", "buy/#{@company.id}", method: :get %>
-	<p style="color:green"><%= flash[:buy_status] %></p>
 </div>
