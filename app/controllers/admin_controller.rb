@@ -4,7 +4,12 @@ class AdminController < ApplicationController
   
   def index
     @server_updater = ServerUpdater.new
-    @server_updater.updateCompanies
+
     @companies = Company.all
+    
+    @server_updater.updateCompanies
+  end
+  
+  def latest
   end
 end

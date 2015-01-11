@@ -1,8 +1,6 @@
 class CompaniesController < ApplicationController
   def new
     @company = Company.new
-    @task = TaskCaller.new
-    @task.update_servers
   end
   
   def create
