@@ -15,6 +15,7 @@ class CompaniesController < ApplicationController
   
   def show
     @company = Company.find(params[:id])
+    @user_company = Company.find_by_name(session[:user_id])
   end
   
   def destroy
@@ -28,14 +29,23 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
     @user_company = Company.find_by_name(session[:user_id])
     
-    puts @user_company.bought_stocks
+    puts "\n\n\nSTOCKS: #{@user_company.bought_stocks}\n\n\n"
     if @user_company.bought_stocks == nil
       @user_company.bought_stocks = Array.new
+      
     end
     @user_company.bought_stocks << @company.name # buy the stock
-    @user_company.save
+    puts "\n\n\nSTOCKS: #{@user_company.bought_stocks}\n\n\n"
     
-    flash[:buy_status] = "You have bought #{@user_company.stocks_bought_in(@company.name)} stock in #{@company.name}"
+    if @user_company.save
+      puts "Successfully bought stock"
+    else
+      puts "\n\n\n"
+      @user_company.errors.full_messages.each do |msg|
+        puts "#{msg}\n"
+      end
+    end
+    
     redirect_to company_path(@company)
   end
   

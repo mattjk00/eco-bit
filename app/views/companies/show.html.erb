@@ -3,5 +3,5 @@
 	<h1><%= @company.name %></h1>
 	<p><%= "Stock Price: $#{@company.stock_price}" %></p>
 	<%= button_to "Buy Stock", "buy/#{@company.id}", method: :get %>
-	<p style="color:green"><%= flash[:buy_status] %></p>
+	<p style="color:green"><%= "You have bought #{@user_company.stocks_bought_in(@company.name)} stock in #{@company.name}" %></p>
 </div>

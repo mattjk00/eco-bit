@@ -1,6 +1,0 @@
-<div id="header">Admin Panel</div>
-<% session[:admin_auth] = true %>
-
-
-
-<div id="compTable"><%= render partial: 'companytable' %></div>
