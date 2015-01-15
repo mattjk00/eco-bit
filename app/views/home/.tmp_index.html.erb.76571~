@@ -1,0 +1,12 @@
+<head>
+	<title>EcoBit</title>
+</head>
+
+<body>
+	
+	<div id="home_header" class="box_header">
+		<img src="sidebar_toddle.png" id="sidebar_toggle"/>
+		<h3>EcoBit</h3>
+	</div>
+	
+</body>

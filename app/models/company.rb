@@ -21,6 +21,10 @@ class Company < ActiveRecord::Base
   def stocks_bought_in(company_name) # get how many stocks are bought in a company
     count = 0
     
+    if self.bought_stocks == nil
+      self.bought_stocks = Array.new
+    end
+    
     puts "Seaching for #{company_name}"
     self.bought_stocks.each do |stock|
       if stock == company_name

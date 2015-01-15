@@ -38,7 +38,7 @@ class CompaniesController < ApplicationController
     puts "\n\n\nSTOCKS: #{@user_company.bought_stocks}\n\n\n"
     
     if @user_company.save
-      puts "Successfully bought stock"
+      puts "Successfully bought stock in #{@company.name}"
     else
       puts "\n\n\n"
       @user_company.errors.full_messages.each do |msg|

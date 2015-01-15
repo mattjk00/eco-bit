@@ -1,0 +1,32 @@
+<%= "Signed in as #{session[:user_id]}" %>
+<div id="homeScreen">
+	
+	
+	
+	<!-- The background -->
+	<div id="left_side_back"></div>
+	<div id="right_side_back"></div>
+
+	<div id="logo"></div>
+	<h1 id="faded_header">Eco-Bit</div>
+	<p class="white_back_p"><%= link_to 'Sign in', "signin/index" %></p>
+	<p class="white_back_p"><%= link_to 'Sign up', new_company_path %></p>
+	
+	<div id="left_side_options">
+		<ul>
+			<a href="">
+				<li id="selected">Play!</li>
+			</a>				
+			<li>Intro</li>
+			<li>The Basics</li>
+			<li>News</li>
+			<li>Tutorials</li>
+		</ul>
+	</div>
+	<div id="info">
+		<p id="info_header">Welcome to the world of Eco-Bit</p>
+		<p class="white_back_p">Eco-Bit is a game dedicated to aspiring </p>
+		<p class="white_back_p">entrepeneurs who wish to simulate a realistic business </p>
+		<p class="white_back_p">and rise to the top with other people online.</p>
+	</div>
+</div>

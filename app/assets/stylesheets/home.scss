@@ -1,3 +1,80 @@
+/* light blue-#2d89ef */
+/* dark-#1d1d1d */
+
+.box_header
+{
+	background-color:#2d89ef;
+}
+
+#home_header
+{
+	position:fixed;
+	z-index:-99;
+	width:100%;
+	left:0;
+	top:0;
+	padding:1px;
+	height:60px;
+	border-bottom:5px solid #2b5797;
+}
+#home_header * { display:inline-block; }
+
+#sidebar_toggle
+{
+	background:url('sidebar_toggle.png');
+	height:59px;
+	width:10px;
+	position:fixed;
+}
+
+#sidebar
+{
+	background-color:#1d1d1d;
+	position:fixed;
+	top:0;
+	left:0;
+	width:25%;
+	height:100%;
+}
+#sidebar * { color:#eff4ff; }
+#sidebar a { color:#603cba }
+#closeSidebar
+{
+	padding:5px;
+	border-bottom-right-radius:3px;
+	background-color:#ee1111;
+	width:35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--=-=-=-=--=-=-=-=-=-=--=-=-=-=--=-=-=-=-=-=--=-=-=-=--=-=-=-=-=-=--=-=-=-=--=-=-=-=-=-=*/
+
+
 #left_side_back, #right_side_back { position:fixed; top:0; left:0; height:100%; z-index:-99; }
 #homeScreen * { font-family:helvetica, tahoma; }
 ::-webkit-scrollbar { 
@@ -67,84 +144,3 @@ a { text-decoration:none; }
 
 
 
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-// dark blue - #2c3e50
-// slightly lighter dark blue - #34495e
-// light blue - #3498db
-// light grey - #ecf0f1
-
-#header
-{
-	border-bottom:1px solid #2c3e50;
-	height:15%;
-}
-
-*
-{
-	padding:10px;
-}
-
-#aboutbox
-{
-	//margin-top:10%;
-	height:30%;
-	background-color:#ecf0f1;
-}
-
-#howtobox
-{
-	//margin-top:18%;
-	height:45%;
-	background-color:#34495e;
-	color:#ecf0f1;
-}
-
-#signupbox
-{
-	//margin-top:40%;
-	height:100%;
-	background-color:#e74c3c;
-}
-
-ul, .floatright_ul
-{
-	width:25%;
-}
-
-.floatright_ul
-{
-	float:right;
-	clear:both;
-}
-
-.mainbox
-{
-	text-align:center;
-	background-color:#3498db;
-	font-family:tahoma, sans;
-	//position:fixed;
-	//top:0;left:0;
-	width:100%;
-}
-
-.boxheader, .boxheader_type2
-{
-	border-bottom:1px solid #2c3e50;
-	width:25%;
-	padding:2px;
-	font-family:tahoma, sans;
-}
-
-.boxheader_type2
-{
-	float:right;
-}

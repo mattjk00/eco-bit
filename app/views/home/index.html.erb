@@ -1,32 +1,22 @@
-<%= "Signed in as #{session[:user_id]}" %>
-<div id="homeScreen">
-	
-	
-	
-	<!-- The background -->
-	<div id="left_side_back"></div>
-	<div id="right_side_back"></div>
+<head>
+	<title>EcoBit</title>
+	<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+</head>
 
-	<div id="logo"></div>
-	<h1 id="faded_header">Eco-Bit</div>
-	<p class="white_back_p"><%= link_to 'Sign in', "signin/index" %></p>
-	<p class="white_back_p"><%= link_to 'Sign up', new_company_path %></p>
+<body>
 	
-	<div id="left_side_options">
-		<ul>
-			<a href="">
-				<li id="selected">Play!</li>
-			</a>				
-			<li>Intro</li>
-			<li>The Basics</li>
-			<li>News</li>
-			<li>Tutorials</li>
-		</ul>
+	<div id="home_header" class="box_header">
+		<div id="sidebar_toggle"></div>
+		<h4 style="margin-left:15px">EcoBit</h4>
 	</div>
-	<div id="info">
-		<p id="info_header">Welcome to the world of Eco-Bit</p>
-		<p class="white_back_p">Eco-Bit is a game dedicated to aspiring </p>
-		<p class="white_back_p">entrepeneurs who wish to simulate a realistic business </p>
-		<p class="white_back_p">and rise to the top with other people online.</p>
+	
+	<div id="sidebar">
+		<div id="closeSidebar">Close</div><br>
+		<div style="display:inline-blocl">
+			<%= link_to 'Sign In', 'signin/index' %> |
+			<%= link_to 'Sign Up', new_company_path %>
+		</div>
+		<p><%= "Signed in as: #{session[:user_id]}" %></p>
 	</div>
-</div>
+	
+</body>
