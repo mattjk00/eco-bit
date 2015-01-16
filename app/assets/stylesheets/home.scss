@@ -1,7 +1,8 @@
 /* light blue-#2d89ef */
 /* dark-#1d1d1d */
 
-body { background:image-url("background.png"); } 
+body { /*background:image-url("background2.png"); background-stretch:true;} */
+	background-color:#efefef; }
 
 .box_header
 {
@@ -56,7 +57,9 @@ body { background:image-url("background.png"); }
 {
 	width:50%;
 	margin-left:25%;
+	border:2px solid #b8b8b8;
 	border-bottom:5px solid #2d89ef;
+	border-radius:2px;
 	margin-top:10%;
 	background-color:#eff4ff;
 	padding:5px;
@@ -64,7 +67,11 @@ body { background:image-url("background.png"); }
 }
 .infoBox h2 { text-decoration:underline; }
 
-
+#header_search
+{
+	float:right;
+	margin-right:25px;
+}
 
 
 

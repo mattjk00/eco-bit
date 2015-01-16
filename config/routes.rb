@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'search/index'
+  
   get 'admin/index'
 
   get 'stockmarket/index'
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
   resources :companies
   
   get 'home/index'
+  post 'home/search'
   get 'companies/index'
   post 'companies/new'
   get '/companies/buy/:id', to: 'companies#buy'

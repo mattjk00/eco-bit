@@ -18,6 +18,7 @@ $(document).ready(function() {
 	
 	sidebarToggle.click(function(){
 		if (sidebarHidden) {
+			sidebar.animate({height:"100%"}, 0);
 			sidebar.show(function(){
 				sidebar.animate({width:"25%"}, 0, function(){
 					sidebarContents.show(function(){

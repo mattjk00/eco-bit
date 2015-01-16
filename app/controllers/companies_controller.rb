@@ -28,14 +28,17 @@ class CompaniesController < ApplicationController
   def buy
     @company = Company.find(params[:id])
     @user_company = Company.find_by_name(session[:user_id])
+    stocksArray = Array.new
     
     puts "\n\n\nSTOCKS: #{@user_company.bought_stocks}\n\n\n"
     if @user_company.bought_stocks == nil
       @user_company.bought_stocks = Array.new
       
     end
-    @user_company.bought_stocks << @company.name # buy the stock
+    stocksArray << @company.name # buy the stock
     puts "\n\n\nSTOCKS: #{@user_company.bought_stocks}\n\n\n"
+    
+    @user_company.bought_stocks = @user_company.bought_stocks + stocksArray
     
     if @user_company.save
       puts "Successfully bought stock in #{@company.name}"

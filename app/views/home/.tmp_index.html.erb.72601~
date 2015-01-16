@@ -8,14 +8,6 @@
 	<div id="home_header" class="box_header">
 		<div id="sidebar_toggle"></div>
 		<h4 style="margin-left:35px">EcoBit</h4>
-		
-		<div id="header_search">
-			<h4>Search:</h4>
-			<%= form_for @company, :url => {:action => :search } do |f| %>
-				<% f.text_field :name %><input/>
-				<% f.submit %><button>Go</button>
-			<% end %>
-		</div>
 	</div>
 		
 	
