@@ -1,6 +1,8 @@
 /* light blue-#2d89ef */
 /* dark-#1d1d1d */
 
+body { background:image-url("background.png"); } 
+
 .box_header
 {
 	background-color:#2d89ef;
@@ -22,9 +24,13 @@
 #sidebar_toggle
 {
 	background:image-url('sidebar_toggle.png');
-	height:59px;
-	width:10px;
+	background-size:100% 100%;
+	height:25px;
+	width:25px;
+	background-repeat:no-repeat;
 	position:fixed;
+	margin-top:18px;
+	margin-left:5px;
 }
 
 #sidebar
@@ -46,7 +52,17 @@
 	width:35px;
 }
 
-
+.infoBox
+{
+	width:50%;
+	margin-left:25%;
+	border-bottom:5px solid #2d89ef;
+	margin-top:10%;
+	background-color:#eff4ff;
+	padding:5px;
+	position:fixed;
+}
+.infoBox h2 { text-decoration:underline; }
 
 
 

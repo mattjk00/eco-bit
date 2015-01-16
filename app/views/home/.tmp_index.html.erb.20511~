@@ -1,0 +1,22 @@
+<head>
+	<title>EcoBit</title>
+	<script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+</head>
+
+<body>
+	
+	<div id="home_header" class="box_header">
+		<div id="sidebar_toggle"></div>
+		<h4 style="margin-left:15px">EcoBit</h4>
+	</div>
+	
+	<div id="sidebar">
+		<div id="closeSidebar">Close</div><br>
+		<div style="display:inline-blocl">
+			<%= link_to 'Sign In', 'signin/index' %> |
+			<%= link_to 'Sign Up', new_company_path %>
+		</div>
+		<p><%= "Signed in as: #{session[:user_id]}" %></p>
+	</div>
+	
+</body>
