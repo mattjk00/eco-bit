@@ -1,10 +1,12 @@
 class CompaniesController < ApplicationController
   def new
     @company = Company.new
+    @search_company = Company.new
   end
   
   def create
     @company = Company.new(company_params)
+    @search_company = Company.new
     
     if @company.save
       redirect_to company_path(@company)
@@ -16,6 +18,7 @@ class CompaniesController < ApplicationController
   def show
     @company = Company.find(params[:id])
     @user_company = Company.find_by_name(session[:user_id])
+    @search_company = Company.new
   end
   
   def destroy

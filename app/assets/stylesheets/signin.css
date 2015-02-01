@@ -1,0 +1,21 @@
+#signin_form p 
+{
+	display:inline-block;
+}
+
+input
+{
+	border:1px solid black;
+	border-radius:2px;
+	font-family:tahoma;
+}
+
+button
+{
+	border:1px solid #1d1d1d;
+	border-bottom:3px solid #1d1d1d;
+	border-radius:2px;
+	background-color:#da532c;
+	color:#eff4ff;
+	padding:2px;
+}

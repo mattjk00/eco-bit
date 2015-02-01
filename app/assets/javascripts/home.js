@@ -1,5 +1,5 @@
-$(document).ready(function() {
-	
+
+var main = function(){
 	var sidebar = $("#sidebar"); // get the sidebar
 	var sidebarContents = $("#sidebar_contents");
 	var sidebarToggle = $("#sidebar_toggle"); // get the toggle button
@@ -39,4 +39,14 @@ $(document).ready(function() {
 		sidebar.hide();
 		sidebarHidden = true;
 	});
-});
+	
+	$("button").mouseover(function(){
+		$(this).css("border-bottom", "1px solid #1d1d1d");
+	});
+	$("button").mouseout(function(){
+		$(this).css("border-bottom", "3px solid #1d1d1d");
+	});
+};
+
+$(document).ready(main);
+$(document).on('page:load', main);

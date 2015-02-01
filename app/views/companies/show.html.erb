@@ -1,6 +1,10 @@
-<%= render 'header' %>
-<div id="companyheader" class="infoBox">
+<%= render 'shared/header' %>
+<script src="/assets/libraries/Chart.js"></script>
+<div class="companyInfoBox" style="height:65%">
 	<h1><%= @company.name %></h1>
+	
+	<canvas id="stockGraph" width="600px" height="200px"></canvas>
+	
 	<p><%= "Stock Price: $#{@company.stock_price}" %></p>
 	<%= button_to "Buy Stock", "buy/#{@company.id}", method: :get %>
 	<p style="color:green"><%= "You have bought #{@user_company.stocks_bought_in(@company.name)} stock in #{@company.name}" %></p>

@@ -53,7 +53,7 @@ body { /*background:image-url("background2.png"); background-stretch:true;} */
 	width:35px;
 }
 
-.infoBox
+.infoBox, .companyInfoBox
 {
 	width:50%;
 	margin-left:25%;
@@ -64,6 +64,7 @@ body { /*background:image-url("background2.png"); background-stretch:true;} */
 	background-color:#eff4ff;
 	padding:5px;
 	position:fixed;
+	height:35%;
 }
 .infoBox h2 { text-decoration:underline; }
 

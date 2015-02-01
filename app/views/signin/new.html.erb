@@ -1,10 +1,15 @@
-<h1>Sign in to your company</h1>
+<%= render 'shared/header' %>
 
-<%= form_for @company, :url => { :action => :create } do |f| %>
-
-	<p style="color:red"><%= flash[:signin_error] %></p>
+<div id="signin_form" class="infoBox">
 	
-	<p>Email:</p><%= f.text_field :email %>
-	<p>Password:</p><%= f.password_field :password %>
-	<% f.submit %><button>Sign In</button>
-<% end %>
+	<h4>Sign in</h4>
+	<%= form_for @company, :url => { :action => :create } do |f| %>
+	
+		<p style="color:red;"><%= flash[:signin_error] %></p><br>
+		
+		<p>Email:</p><%= f.text_field :email %><br>
+		<p>Password:</p><%= f.password_field :password %><br>
+		<% f.submit %><button>Sign In</button>
+	<% end %>
+	
+</div>

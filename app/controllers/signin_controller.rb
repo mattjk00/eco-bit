@@ -1,11 +1,13 @@
 class SigninController < ApplicationController
   def index
     @company = Company.new
+    @search_company = Company.new
     render 'new'
   end
   
   def new
     @company = Company.new # blank user
+    @search_company = Company.new
   end
 
   def create
